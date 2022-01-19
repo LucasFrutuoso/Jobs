@@ -1,0 +1,54 @@
+/*** Endpoints
+ * GET /work/v1/company/{id}/applies -> Consultar candidaturas de uma empresa OK - OK
+ * GET /work/v1/company/{id} -> Consultar dados de uma empresa - OK - OK
+ * POST /work/v1/company -> Cadastrar empresa - OK - OK
+
+ * POST /work/v1/company/{id}/job -> Cadastrar vaga para empresa - OK - OK
+ * PUT /work/v1/company/{id}/job/{id} -> Alterar dados de uma vaga - OK - OK
+ * DELETE /work/v1/company/{id}/job/{id} -> Apagar vaga de emprego - OK - OK
+
+
+ * POST /work/v1/user -> Cadastrar usuário - OK - OK
+ * GET /work/v1/user/{id} -> Consultar dados de um usuário - OK - OK
+ * PUT /work/v1/user/{id} -> Alterar dados de um usuário - - OK - OK
+ * DELETE /work/v1/user/{id} -> Apagar usuário - OK - OK
+ * 
+ * 
+ - POST /work/v1/user/{id}/job/{id}/apply -> Cadastrar candidatura - OK - OK
+- DELETE /work/v1/user/{id}/applies/{id} -> Excluir candidatura - OK - OK
+ /
+
+
+ /* Empresa
+ * -id
+ * -nome
+ * -telefone
+ * -email
+ * -cnpj
+ * -dataCriacao
+ * -dataAtualizacao
+ * 
+ * Vaga
+ * -id
+ * -titulo
+ * -requisitos
+ * -atividades
+ * -idEmpresa
+ * -dataCriacao
+ * -dataAtualizacao
+ * 
+ * Usuario
+ * -id
+ * -nome
+ * -telefone
+ * -email
+ * -cpf
+ * -endereco
+ * 
+ * Candidatura
+ * -id
+ * -vagaId
+ * -usuarioId
+ * -dataCriacao
+ * -dataAtualizacao
+ * */
